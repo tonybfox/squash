@@ -55,7 +55,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "03C55D95919B4DF6F8C437F9"
             BuildableName = "SquashScore Watch App.app"
-            BlueprintName = "SquashScore Watch App"
             ReferencedContainer = "container:SquashScore.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -72,7 +71,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "03C55D95919B4DF6F8C437F9"
             BuildableName = "SquashScore Watch App.app"
-            BlueprintName = "SquashScore Watch App"
             ReferencedContainer = "container:SquashScore.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

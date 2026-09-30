@@ -85,7 +85,6 @@
 				5CC8C26CB5BADB7B20030B5D /* SquashScorePhoneApp.swift */,
 				CD2E0016AC5236927BCF0F9B /* Assets.xcassets */,
 			);
-			name = iPhone;
 			path = iPhone;
 			sourceTree = "<group>";
 		};
@@ -107,7 +106,6 @@
 				97006745B96DF13A9BE1B2BC /* Assets.xcassets */,
 				02AFBB28DF002FF58DC1E981 /* Info.plist */,
 			);
-			name = SquashScore;
 			path = SquashScore;
 			sourceTree = "<group>";
 		};
@@ -243,6 +241,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BBKCQ23HW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SquashScore/Info.plist;
@@ -271,6 +270,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BBKCQ23HW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Squash;
@@ -421,6 +421,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BBKCQ23HW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Squash;
@@ -451,6 +452,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BBKCQ23HW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SquashScore/Info.plist;
