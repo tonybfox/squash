@@ -4,7 +4,9 @@
 <dict>
 	<key>WKApplication</key>
 	<true/>
-	<key>WKWatchOnly</key>
+	<key>WKCompanionAppBundleIdentifier</key>
+	<string>com.tonybfox.SquashScore</string>
+	<key>WKRunsIndependentlyOfCompanionApp</key>
 	<true/>
 </dict>
 </plist>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "56279EA236A9AA4C36B0EFD0"
+               BlueprintIdentifier = "82354C71B4B113C1CD50E641"
                BuildableName = "SquashScore.app"
                BlueprintName = "SquashScore"
                ReferencedContainer = "container:SquashScore.xcodeproj">
@@ -30,7 +30,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "56279EA236A9AA4C36B0EFD0"
+            BlueprintIdentifier = "82354C71B4B113C1CD50E641"
             BuildableName = "SquashScore.app"
             BlueprintName = "SquashScore"
             ReferencedContainer = "container:SquashScore.xcodeproj">
@@ -53,7 +53,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "56279EA236A9AA4C36B0EFD0"
+            BlueprintIdentifier = "82354C71B4B113C1CD50E641"
             BuildableName = "SquashScore.app"
             BlueprintName = "SquashScore"
             ReferencedContainer = "container:SquashScore.xcodeproj">
@@ -70,7 +70,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "56279EA236A9AA4C36B0EFD0"
+            BlueprintIdentifier = "82354C71B4B113C1CD50E641"
             BuildableName = "SquashScore.app"
             BlueprintName = "SquashScore"
             ReferencedContainer = "container:SquashScore.xcodeproj">

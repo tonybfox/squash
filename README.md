@@ -24,16 +24,31 @@ Runs on watchOS 10 or later. Nothing is saved between matches.
 
 You need a Mac with Xcode 15 or later, and the iPhone your watch is paired with.
 
+The watch app is carried inside a small iPhone app, so Xcode only has to talk
+to the iPhone over its cable. The iPhone then hands the app to the watch.
+
 1. Open `SquashScore.xcodeproj` in Xcode.
-2. Select the **SquashScore** target → **Signing & Capabilities** and pick your
-   **Team** (a free personal team with your Apple ID works, but the app then
-   needs reinstalling every 7 days). If Xcode says the bundle identifier is
-   taken, change `com.tonybfox.SquashScore.watchkitapp` to something unique.
-3. Plug the iPhone into the Mac. Turn on **Developer Mode** on the iPhone
-   (Settings → Privacy & Security) and on the watch (Settings → Privacy &
-   Security) when prompted.
-4. Choose your Apple Watch as the run destination at the top of the Xcode
-   window and press **Run** (⌘R). The app appears on the watch as **Squash**.
+2. For **both** targets, **SquashScore** and **SquashScore Watch App**, open
+   **Signing & Capabilities** and pick your **Team** (a free personal team with
+   your Apple ID works, but the app then needs reinstalling every 7 days). If
+   Xcode says a bundle identifier is taken, change `com.tonybfox` in both
+   bundle identifiers and in `SquashScore/Info.plist` to something unique.
+3. Plug the iPhone into the Mac, unlock it, and make sure **Developer Mode** is
+   on (Settings → Privacy & Security → Developer Mode).
+4. At the top of the Xcode window pick the **SquashScore** scheme and your
+   **iPhone** as the run destination, then press **Run** (⌘R). A "Squash"
+   screen with install instructions opens on the phone. If the phone says the
+   developer isn't trusted, go to Settings → General → VPN & Device Management,
+   trust your Apple ID, and press Run again.
+5. On the iPhone, open the **Watch** app, scroll down to **Available Apps**, and
+   tap **Install** next to **Squash**. It can take a minute or two to appear on
+   the watch.
+6. Open Squash on the watch. If it says Developer Mode is required, go to
+   **Settings → Privacy & Security → Developer Mode** on the watch, turn it on,
+   and let the watch restart.
+
+If Xcode can connect to your watch directly, you can instead pick the
+**SquashScore Watch App** scheme with the watch as the run destination.
 
 ### Keeping it on screen during a match
 
