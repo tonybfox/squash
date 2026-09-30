@@ -30,6 +30,8 @@ struct Match {
     private(set) var server: Player?
     private(set) var points = Tally()
     private(set) var games = Tally()
+    /// Final points of each completed game, in order.
+    private(set) var completedGames: [Tally] = []
 
     var hasStarted: Bool { server != nil }
 
@@ -52,9 +54,17 @@ struct Match {
 
         if points[player] >= 11 && points[player] - points[player.opponent] >= 2 {
             games[player] += 1
+            completedGames.append(points)
             points = Tally()
             return .gameWon
         }
         return .point
+    }
+}
+
+extension Match {
+    /// This match as recorded in the iPhone's match history.
+    var result: MatchResult {
+        MatchResult(games: completedGames.map { MatchResult.Game(me: $0.me, them: $0.them) })
     }
 }

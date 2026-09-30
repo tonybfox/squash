@@ -10,10 +10,15 @@
 		32221E3024A71D351ADB0077 /* SquashScorePhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC8C26CB5BADB7B20030B5D /* SquashScorePhoneApp.swift */; };
 		3E15055CC95EDBCF58D2E20E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2E0016AC5236927BCF0F9B /* Assets.xcassets */; };
 		5AB80CB1A536288DC41380D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7E9F921B5D2B593E140BB /* ContentView.swift */; };
+		6F4FDDC92E9B1E7DE5EA5478 /* MatchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7753FDDE54FC0975765558 /* MatchHistory.swift */; };
 		8380AE345967656DA9F98ADA /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BB5110353BB34832D98D4 /* Match.swift */; };
 		92A4AD1D9448C8D8644F1F8F /* SquashScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C72765BF288B4FA31FEFD /* SquashScoreApp.swift */; };
+		991E42DAF9B72B82FE4A5E74 /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4789AB2E221644AA4542AD7 /* MatchResult.swift */; };
 		A2DCCD9D468E68EDD7E72C19 /* SquashScore Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 08A7C49E2421EA89C9489D0C /* SquashScore Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA801A54EE91E1D6B5ABE6E6 /* MatchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DD2FDF54468584EA2F0F83 /* MatchHistoryView.swift */; };
+		BB62C13E316EF8B839DE1EA3 /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4789AB2E221644AA4542AD7 /* MatchResult.swift */; };
 		D9F77A64DC53BCD64071180E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97006745B96DF13A9BE1B2BC /* Assets.xcassets */; };
+		FFC427042AA0E23997DC506A /* MatchResultSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14191BFC4AF07272640EE29B /* MatchResultSender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +49,14 @@
 		02AFBB28DF002FF58DC1E981 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04C35C25B3090BEA8DD42C0A /* SquashScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquashScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A7C49E2421EA89C9489D0C /* SquashScore Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SquashScore Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14191BFC4AF07272640EE29B /* MatchResultSender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchResultSender.swift; sourceTree = "<group>"; };
 		5CC8C26CB5BADB7B20030B5D /* SquashScorePhoneApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SquashScorePhoneApp.swift; sourceTree = "<group>"; };
+		77DD2FDF54468584EA2F0F83 /* MatchHistoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchHistoryView.swift; sourceTree = "<group>"; };
 		97006745B96DF13A9BE1B2BC /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4789AB2E221644AA4542AD7 /* MatchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchResult.swift; sourceTree = "<group>"; };
 		CAB7E9F921B5D2B593E140BB /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD2E0016AC5236927BCF0F9B /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA7753FDDE54FC0975765558 /* MatchHistory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchHistory.swift; sourceTree = "<group>"; };
 		DB6BB5110353BB34832D98D4 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		DC8C72765BF288B4FA31FEFD /* SquashScoreApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SquashScoreApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,11 +88,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		97AD3F31EAC13D256A24461B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A4789AB2E221644AA4542AD7 /* MatchResult.swift */,
+			);
+			name = Shared;
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		C821A2DA8BE78CF422FD7699 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
 				5CC8C26CB5BADB7B20030B5D /* SquashScorePhoneApp.swift */,
 				CD2E0016AC5236927BCF0F9B /* Assets.xcassets */,
+				DA7753FDDE54FC0975765558 /* MatchHistory.swift */,
+				77DD2FDF54468584EA2F0F83 /* MatchHistoryView.swift */,
 			);
 			name = iPhone;
 			path = iPhone;
@@ -95,6 +115,7 @@
 				3EC1FB7C0D6D9700F7857C2A /* Products */,
 				FEBA7C38267370F526A0A749 /* SquashScore */,
 				C821A2DA8BE78CF422FD7699 /* iPhone */,
+				97AD3F31EAC13D256A24461B /* Shared */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +127,7 @@
 				DB6BB5110353BB34832D98D4 /* Match.swift */,
 				97006745B96DF13A9BE1B2BC /* Assets.xcassets */,
 				02AFBB28DF002FF58DC1E981 /* Info.plist */,
+				14191BFC4AF07272640EE29B /* MatchResultSender.swift */,
 			);
 			name = SquashScore;
 			path = SquashScore;
@@ -211,6 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				32221E3024A71D351ADB0077 /* SquashScorePhoneApp.swift in Sources */,
+				991E42DAF9B72B82FE4A5E74 /* MatchResult.swift in Sources */,
+				6F4FDDC92E9B1E7DE5EA5478 /* MatchHistory.swift in Sources */,
+				AA801A54EE91E1D6B5ABE6E6 /* MatchHistoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +246,8 @@
 				92A4AD1D9448C8D8644F1F8F /* SquashScoreApp.swift in Sources */,
 				5AB80CB1A536288DC41380D2 /* ContentView.swift in Sources */,
 				8380AE345967656DA9F98ADA /* Match.swift in Sources */,
+				BB62C13E316EF8B839DE1EA3 /* MatchResult.swift in Sources */,
+				FFC427042AA0E23997DC506A /* MatchResultSender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
