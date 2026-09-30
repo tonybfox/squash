@@ -1,7 +1,8 @@
 # Squash
 
 A tiny Apple Watch app for keeping score of a squash match while you play.
-Runs on watchOS 10 or later. Nothing is saved between matches.
+Runs on watchOS 10 or later. The watch starts fresh for every match, and the
+iPhone app keeps a history of finished matches.
 
 ## Using it
 
@@ -19,6 +20,15 @@ Runs on watchOS 10 or later. Nothing is saved between matches.
 - The small **flag button** at the bottom middle finishes the match and shows
   the winner (ME or THEM, or DRAW) with the games score. Tap that screen again
   to go back to the start.
+
+## Match history
+
+When you finish a match with the flag button, the watch sends the result to
+the **Squash** app on your iPhone. It shows your won/lost record and every
+match with its date, games score and each game's points. Swipe left on a match
+to delete it. The phone doesn't need to be nearby: results are queued and
+arrive the next time you open the iPhone app. Matches finished before a single
+game was completed aren't recorded.
 
 ## Installing on your watch
 

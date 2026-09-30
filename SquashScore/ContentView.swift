@@ -42,6 +42,9 @@ struct ContentView: View {
     }
 
     private func finish() {
+        if !match.completedGames.isEmpty {
+            MatchResultSender.shared.send(match.result)
+        }
         WKInterfaceDevice.current().play(.stop)
         isShowingResult = true
     }
