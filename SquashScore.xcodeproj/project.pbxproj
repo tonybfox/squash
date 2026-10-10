@@ -7,23 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0659DE556AFAD48AA4AFF1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67776B135B84761402D89374 /* Assets.xcassets */; };
-		6015E9CED44248BC7CBD5461 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E26ED57340D1A787E4CF65 /* ContentView.swift */; };
-		89C79BD6A9C7954664A2969E /* SquashScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061BC5498DFB7B09002A2F98 /* SquashScoreApp.swift */; };
-		B5D2682829398591F7F6E438 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031C601DAB2C37C9AC8B789 /* Match.swift */; };
+		32221E3024A71D351ADB0077 /* SquashScorePhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC8C26CB5BADB7B20030B5D /* SquashScorePhoneApp.swift */; };
+		3E15055CC95EDBCF58D2E20E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2E0016AC5236927BCF0F9B /* Assets.xcassets */; };
+		5AB80CB1A536288DC41380D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7E9F921B5D2B593E140BB /* ContentView.swift */; };
+		6F4FDDC92E9B1E7DE5EA5478 /* MatchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7753FDDE54FC0975765558 /* MatchHistory.swift */; };
+		8380AE345967656DA9F98ADA /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BB5110353BB34832D98D4 /* Match.swift */; };
+		92A4AD1D9448C8D8644F1F8F /* SquashScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C72765BF288B4FA31FEFD /* SquashScoreApp.swift */; };
+		991E42DAF9B72B82FE4A5E74 /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4789AB2E221644AA4542AD7 /* MatchResult.swift */; };
+		A2DCCD9D468E68EDD7E72C19 /* SquashScore Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 08A7C49E2421EA89C9489D0C /* SquashScore Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA801A54EE91E1D6B5ABE6E6 /* MatchHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DD2FDF54468584EA2F0F83 /* MatchHistoryView.swift */; };
+		BB62C13E316EF8B839DE1EA3 /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4789AB2E221644AA4542AD7 /* MatchResult.swift */; };
+		D9F77A64DC53BCD64071180E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97006745B96DF13A9BE1B2BC /* Assets.xcassets */; };
+		FFC427042AA0E23997DC506A /* MatchResultSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14191BFC4AF07272640EE29B /* MatchResultSender.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2BACD399CA09C7E97B43DC77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C1424EE25C94031998D8517 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03C55D95919B4DF6F8C437F9;
+			remoteInfo = "SquashScore Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7A08FFEBD6F5C6C6EA39748C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A2DCCD9D468E68EDD7E72C19 /* SquashScore Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		061BC5498DFB7B09002A2F98 /* SquashScoreApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SquashScoreApp.swift; sourceTree = "<group>"; };
-		2FC2188C2D1FDE9A50344E46 /* SquashScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquashScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C05FF05A851A06322E69AB6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67776B135B84761402D89374 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F031C601DAB2C37C9AC8B789 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
-		F7E26ED57340D1A787E4CF65 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02AFBB28DF002FF58DC1E981 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C35C25B3090BEA8DD42C0A /* SquashScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquashScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A7C49E2421EA89C9489D0C /* SquashScore Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SquashScore Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14191BFC4AF07272640EE29B /* MatchResultSender.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchResultSender.swift; sourceTree = "<group>"; };
+		5CC8C26CB5BADB7B20030B5D /* SquashScorePhoneApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SquashScorePhoneApp.swift; sourceTree = "<group>"; };
+		77DD2FDF54468584EA2F0F83 /* MatchHistoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchHistoryView.swift; sourceTree = "<group>"; };
+		97006745B96DF13A9BE1B2BC /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4789AB2E221644AA4542AD7 /* MatchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchResult.swift; sourceTree = "<group>"; };
+		CAB7E9F921B5D2B593E140BB /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD2E0016AC5236927BCF0F9B /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA7753FDDE54FC0975765558 /* MatchHistory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MatchHistory.swift; sourceTree = "<group>"; };
+		DB6BB5110353BB34832D98D4 /* Match.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		DC8C72765BF288B4FA31FEFD /* SquashScoreApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SquashScoreApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28B18F12021222C74351FE72 /* Frameworks */ = {
+		34DF53E8EA80B1C7BE69E6A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE90FC9CD3273AE130C51670 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,70 +79,115 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12F631959236BDB603C4307F /* SquashScore */ = {
+		3EC1FB7C0D6D9700F7857C2A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				061BC5498DFB7B09002A2F98 /* SquashScoreApp.swift */,
-				F7E26ED57340D1A787E4CF65 /* ContentView.swift */,
-				F031C601DAB2C37C9AC8B789 /* Match.swift */,
-				67776B135B84761402D89374 /* Assets.xcassets */,
-				5C05FF05A851A06322E69AB6 /* Info.plist */,
-			);
-			name = SquashScore;
-			path = SquashScore;
-			sourceTree = "<group>";
-		};
-		DA0826D89E4EB2A4E27B6766 = {
-			isa = PBXGroup;
-			children = (
-				FE2CF5BEBCAF75ECBCB808F6 /* Products */,
-				12F631959236BDB603C4307F /* SquashScore */,
-			);
-			sourceTree = "<group>";
-		};
-		FE2CF5BEBCAF75ECBCB808F6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2FC2188C2D1FDE9A50344E46 /* SquashScore.app */,
+				04C35C25B3090BEA8DD42C0A /* SquashScore.app */,
+				08A7C49E2421EA89C9489D0C /* SquashScore Watch App.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		97AD3F31EAC13D256A24461B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A4789AB2E221644AA4542AD7 /* MatchResult.swift */,
+			);
+			name = Shared;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C821A2DA8BE78CF422FD7699 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				5CC8C26CB5BADB7B20030B5D /* SquashScorePhoneApp.swift */,
+				CD2E0016AC5236927BCF0F9B /* Assets.xcassets */,
+				DA7753FDDE54FC0975765558 /* MatchHistory.swift */,
+				77DD2FDF54468584EA2F0F83 /* MatchHistoryView.swift */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		DA9605D23891A3D3B89E107F = {
+			isa = PBXGroup;
+			children = (
+				3EC1FB7C0D6D9700F7857C2A /* Products */,
+				FEBA7C38267370F526A0A749 /* SquashScore */,
+				C821A2DA8BE78CF422FD7699 /* iPhone */,
+				97AD3F31EAC13D256A24461B /* Shared */,
+			);
+			sourceTree = "<group>";
+		};
+		FEBA7C38267370F526A0A749 /* SquashScore */ = {
+			isa = PBXGroup;
+			children = (
+				DC8C72765BF288B4FA31FEFD /* SquashScoreApp.swift */,
+				CAB7E9F921B5D2B593E140BB /* ContentView.swift */,
+				DB6BB5110353BB34832D98D4 /* Match.swift */,
+				97006745B96DF13A9BE1B2BC /* Assets.xcassets */,
+				02AFBB28DF002FF58DC1E981 /* Info.plist */,
+				14191BFC4AF07272640EE29B /* MatchResultSender.swift */,
+			);
+			path = SquashScore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		56279EA236A9AA4C36B0EFD0 /* SquashScore */ = {
+		03C55D95919B4DF6F8C437F9 /* SquashScore Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8DFA0A838FC5E5D83237103A /* Build configuration list for PBXNativeTarget "SquashScore" */;
+			buildConfigurationList = B9780776E46DFF9677B0C199 /* Build configuration list for PBXNativeTarget "SquashScore Watch App" */;
 			buildPhases = (
-				4AF73A1ED65D6C5B4CBBE103 /* Sources */,
-				28B18F12021222C74351FE72 /* Frameworks */,
-				4EC51DC4B8A3172B9FD65C10 /* Resources */,
+				CAD9565A2B2F58EB7F5CA37A /* Sources */,
+				AE90FC9CD3273AE130C51670 /* Frameworks */,
+				A8B6A8401160F3AC0E8F3686 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = "SquashScore Watch App";
+			productName = "SquashScore Watch App";
+			productReference = 08A7C49E2421EA89C9489D0C /* SquashScore Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82354C71B4B113C1CD50E641 /* SquashScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EC9307E9BB6AA6FC8686531 /* Build configuration list for PBXNativeTarget "SquashScore" */;
+			buildPhases = (
+				707B9B4608E030C168980E32 /* Sources */,
+				34DF53E8EA80B1C7BE69E6A6 /* Frameworks */,
+				3DD8CFFF8781FBF1E59432C5 /* Resources */,
+				7A08FFEBD6F5C6C6EA39748C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93C33E020ABB52259209C37D /* PBXTargetDependency */,
+			);
 			name = SquashScore;
 			productName = SquashScore;
-			productReference = 2FC2188C2D1FDE9A50344E46 /* SquashScore.app */;
+			productReference = 04C35C25B3090BEA8DD42C0A /* SquashScore.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7D23B20AC5B8C574EDAA9E20 /* Project object */ = {
+		0C1424EE25C94031998D8517 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					56279EA236A9AA4C36B0EFD0 = {
+					03C55D95919B4DF6F8C437F9 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					82354C71B4B113C1CD50E641 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = C22D853A29F836F60A6AD396 /* Build configuration list for PBXProject "SquashScore" */;
+			buildConfigurationList = 2F6C38B0593253F58934D0D0 /* Build configuration list for PBXProject "SquashScore" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,48 +195,80 @@
 				en,
 				Base,
 			);
-			mainGroup = DA0826D89E4EB2A4E27B6766;
-			productRefGroup = FE2CF5BEBCAF75ECBCB808F6 /* Products */;
+			mainGroup = DA9605D23891A3D3B89E107F;
+			productRefGroup = 3EC1FB7C0D6D9700F7857C2A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				56279EA236A9AA4C36B0EFD0 /* SquashScore */,
+				82354C71B4B113C1CD50E641 /* SquashScore */,
+				03C55D95919B4DF6F8C437F9 /* SquashScore Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4EC51DC4B8A3172B9FD65C10 /* Resources */ = {
+		3DD8CFFF8781FBF1E59432C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0659DE556AFAD48AA4AFF1DC /* Assets.xcassets in Resources */,
+				3E15055CC95EDBCF58D2E20E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8B6A8401160F3AC0E8F3686 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F77A64DC53BCD64071180E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4AF73A1ED65D6C5B4CBBE103 /* Sources */ = {
+		707B9B4608E030C168980E32 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89C79BD6A9C7954664A2969E /* SquashScoreApp.swift in Sources */,
-				6015E9CED44248BC7CBD5461 /* ContentView.swift in Sources */,
-				B5D2682829398591F7F6E438 /* Match.swift in Sources */,
+				32221E3024A71D351ADB0077 /* SquashScorePhoneApp.swift in Sources */,
+				991E42DAF9B72B82FE4A5E74 /* MatchResult.swift in Sources */,
+				6F4FDDC92E9B1E7DE5EA5478 /* MatchHistory.swift in Sources */,
+				AA801A54EE91E1D6B5ABE6E6 /* MatchHistoryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD9565A2B2F58EB7F5CA37A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A4AD1D9448C8D8644F1F8F /* SquashScoreApp.swift in Sources */,
+				5AB80CB1A536288DC41380D2 /* ContentView.swift in Sources */,
+				8380AE345967656DA9F98ADA /* Match.swift in Sources */,
+				BB62C13E316EF8B839DE1EA3 /* MatchResult.swift in Sources */,
+				FFC427042AA0E23997DC506A /* MatchResultSender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		93C33E020ABB52259209C37D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SquashScore Watch App";
+			target = 03C55D95919B4DF6F8C437F9 /* SquashScore Watch App */;
+			targetProxy = 2BACD399CA09C7E97B43DC77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		44236921C99BC3BD7F6C5546 /* Release */ = {
+		4B9EAB5FF33299DCE8F7BFA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BBKCQ23HW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SquashScore/Info.plist;
@@ -167,7 +290,94 @@
 			};
 			name = Release;
 		};
-		8BC4EB8CA07E10BE3E23F702 /* Debug */ = {
+		7E95FE5997FD23A44DA8C23C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BBKCQ23HW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Squash;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonybfox.SquashScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C703D635D0D2A2447C2C382B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7B31D0FAD49250F7E94A0B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,80 +434,50 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
-		A44E1228BB08A83E631875EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Release;
-		};
-		DC3BA03512621C759A5E952E /* Debug */ = {
+		D216FF50B0C9DA6E6E1292DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BBKCQ23HW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Squash;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonybfox.SquashScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F15C1D23B89E3B8159E8595D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BBKCQ23HW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SquashScore/Info.plist;
@@ -322,25 +502,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8DFA0A838FC5E5D83237103A /* Build configuration list for PBXNativeTarget "SquashScore" */ = {
+		2F6C38B0593253F58934D0D0 /* Build configuration list for PBXProject "SquashScore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				44236921C99BC3BD7F6C5546 /* Release */,
-				DC3BA03512621C759A5E952E /* Debug */,
+				C7B31D0FAD49250F7E94A0B9 /* Debug */,
+				C703D635D0D2A2447C2C382B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C22D853A29F836F60A6AD396 /* Build configuration list for PBXProject "SquashScore" */ = {
+		9EC9307E9BB6AA6FC8686531 /* Build configuration list for PBXNativeTarget "SquashScore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BC4EB8CA07E10BE3E23F702 /* Debug */,
-				A44E1228BB08A83E631875EB /* Release */,
+				D216FF50B0C9DA6E6E1292DC /* Release */,
+				7E95FE5997FD23A44DA8C23C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9780776E46DFF9677B0C199 /* Build configuration list for PBXNativeTarget "SquashScore Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B9EAB5FF33299DCE8F7BFA2 /* Release */,
+				F15C1D23B89E3B8159E8595D /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7D23B20AC5B8C574EDAA9E20 /* Project object */;
+	rootObject = 0C1424EE25C94031998D8517 /* Project object */;
 }
