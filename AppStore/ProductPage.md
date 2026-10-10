@@ -73,7 +73,7 @@ scorekeeper,scoreboard,counter,racquet,racket,rally,point,tracker,referee,marker
 Apple already searches the name and subtitle, so the keywords skip "squash",
 "score", "watch" and "match".
 
-**Support URL:** `https://github.com/tonybfox/squash/blob/main/SUPPORT.md`
+**Support URL:** `https://tonybfox.github.io/squash/support/`
 **Marketing URL:** optional, leave blank
 **Copyright:** `2026 Tony Fox`
 
@@ -95,7 +95,7 @@ Not shown for the first version.
 
 ## App Privacy
 
-**Privacy Policy URL:** `https://github.com/tonybfox/squash/blob/main/PRIVACY.md`
+**Privacy Policy URL:** `https://tonybfox.github.io/squash/privacy/`
 
 **Data collection:** choose **"No, we do not collect data from this app"**.
 Results go straight from the watch to your own iPhone through Watch

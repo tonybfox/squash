@@ -1,3 +1,8 @@
+---
+title: Privacy policy
+permalink: /privacy/
+---
+
 # Squash Score privacy policy
 
 _Last updated: 10 October 2026_

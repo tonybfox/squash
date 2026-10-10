@@ -1,3 +1,8 @@
+---
+title: Support
+permalink: /support/
+---
+
 # Squash Score support
 
 Squash Score keeps the score of a squash match on your Apple Watch, and keeps
@@ -45,4 +50,4 @@ In the iPhone app, swipe left on the match and tap **Delete**.
 
 ## Privacy
 
-Squash Score collects no data. See the [privacy policy](PRIVACY.md).
+Squash Score collects no data. See the [privacy policy]({{ '/privacy/' | relative_url }}).
