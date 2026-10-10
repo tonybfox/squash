@@ -5,14 +5,26 @@ struct ContentView: View {
     @State private var match = Match()
     @State private var isShowingResult = false
 
+    // SCREENSHOT-TEMP: replays `-rallies MTM…` (first server, then rally winners).
+    init() {
+        var match = Match()
+        for c in UserDefaults.standard.string(forKey: "rallies") ?? "" {
+            _ = match.tap(c == "M" ? .me : .them)
+        }
+        _match = State(initialValue: match)
+        _isShowingResult = State(initialValue: UserDefaults.standard.bool(forKey: "finished"))
+    }
+
     var body: some View {
         GeometryReader { proxy in
             let insets = proxy.safeAreaInsets
 
             ZStack(alignment: .bottom) {
                 HStack(spacing: 4) {
-                    PlayerButton(player: .me, match: match, insets: insets) { tap(.me) }
-                    PlayerButton(player: .them, match: match, insets: insets) { tap(.them) }
+                    PlayerButton(player: .me, match: match, insets: insets,
+                                 action: { tap(.me) }, removePoint: { removePoint(from: .me) })
+                    PlayerButton(player: .them, match: match, insets: insets,
+                                 action: { tap(.them) }, removePoint: { removePoint(from: .them) })
                 }
 
                 if match.hasStarted {
@@ -35,9 +47,15 @@ struct ContentView: View {
         case .choseFirstServer:
             WKInterfaceDevice.current().play(.start)
         case .point:
-            WKInterfaceDevice.current().play(.click)
+            WKInterfaceDevice.current().play(.directionUp)
         case .gameWon:
             WKInterfaceDevice.current().play(.success)
+        }
+    }
+
+    private func removePoint(from player: Player) {
+        if match.removePoint(from: player) {
+            WKInterfaceDevice.current().play(.directionDown)
         }
     }
 
@@ -61,12 +79,13 @@ extension Player {
 }
 
 /// One half of the screen: serve dot at the top, points in the middle,
-/// games won at the bottom.
+/// games won at the bottom, and a minus button in the outer top corner.
 private struct PlayerButton: View {
     let player: Player
     let match: Match
     let insets: EdgeInsets
     let action: () -> Void
+    let removePoint: () -> Void
 
     var body: some View {
         Button(action: action) {
@@ -94,6 +113,38 @@ private struct PlayerButton: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(player.color, in: RoundedRectangle(cornerRadius: 10))
             .contentShape(Rectangle())
+        }
+        .buttonStyle(DimWhenPressed())
+        // Overlaid rather than inside the label, so tapping it never also
+        // scores a point.
+        .overlay(alignment: player == .me ? .topLeading : .topTrailing) {
+            if match.hasStarted {
+                MinusButton(isActive: match.canRemovePoint(from: player), action: removePoint)
+                    // Level with the serve dot.
+                    .padding(.top, insets.top + 10 - MinusButton.size / 2)
+            }
+        }
+    }
+}
+
+/// Takes a point back off one side. Dimmed when there is nothing to take
+/// back, but still swallows taps so they don't score a point underneath.
+private struct MinusButton: View {
+    static let size: CGFloat = 32
+
+    let isActive: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            Image(systemName: "minus")
+                .font(.system(size: 11, weight: .bold))
+                .foregroundStyle(.white)
+                .frame(width: 22, height: 22)
+                .background(Color.black.opacity(0.3), in: Circle())
+                .opacity(isActive ? 1 : 0.35)
+                .frame(width: Self.size, height: Self.size)
+                .contentShape(Rectangle())
         }
         .buttonStyle(DimWhenPressed())
     }

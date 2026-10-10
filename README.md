@@ -17,6 +17,11 @@ iPhone app keeps a history of finished matches.
 - When someone wins a game, a dot is added to the bottom of their side, the
   scores reset to `0`, and the game winner serves first in the next game.
   After 5 games a side shows a dot and a number instead of more dots.
+- Tapped the wrong side? The small **minus button** in the top outer corner of
+  each side takes that side's last point back, and the serve dot goes back to
+  who was serving before it. At `0–0` it can take back the point that just won
+  a game, and before any points it undoes picking the first server. It's
+  dimmed when that side has nothing to take back.
 - The small **flag button** at the bottom middle finishes the match and shows
   the winner (ME or THEM, or DRAW) with the games score. Tap that screen again
   to go back to the start.

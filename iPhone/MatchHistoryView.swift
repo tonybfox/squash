@@ -89,7 +89,8 @@ private struct MatchRow: View {
                 Text("\(result.gamesWonByMe) – \(result.gamesWonByThem)")
                     .font(.headline)
                     .monospacedDigit()
-                Text(result.games.map { "\($0.me)–\($0.them)" }.joined(separator: ", "))
+                // Word joiners stop a game's score wrapping at the dash.
+                Text(result.games.map { "\($0.me)\u{2060}–\u{2060}\($0.them)" }.joined(separator: ", "))
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .monospacedDigit()
