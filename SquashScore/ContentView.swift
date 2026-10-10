@@ -5,16 +5,6 @@ struct ContentView: View {
     @State private var match = Match()
     @State private var isShowingResult = false
 
-    // SCREENSHOT-TEMP: replays `-rallies MTM…` (first server, then rally winners).
-    init() {
-        var match = Match()
-        for c in UserDefaults.standard.string(forKey: "rallies") ?? "" {
-            _ = match.tap(c == "M" ? .me : .them)
-        }
-        _match = State(initialValue: match)
-        _isShowingResult = State(initialValue: UserDefaults.standard.bool(forKey: "finished"))
-    }
-
     var body: some View {
         GeometryReader { proxy in
             let insets = proxy.safeAreaInsets
