@@ -73,8 +73,7 @@ scorekeeper,scoreboard,counter,racquet,racket,rally,point,tracker,referee,marker
 Apple already searches the name and subtitle, so the keywords skip "squash",
 "score", "watch" and "match".
 
-**Support URL:** `https://…` (required, has to be a public page; the GitHub
-repo is private, so it won't work as is)
+**Support URL:** `https://github.com/tonybfox/squash/blob/main/SUPPORT.md`
 **Marketing URL:** optional, leave blank
 **Copyright:** `2026 Tony Fox`
 
@@ -84,8 +83,8 @@ In `AppStore/Screenshots/`:
 
 | Folder | Upload to | Size |
 | --- | --- | --- |
-| `iPhone 6.9` | iPhone → 6.9" Display | 1320 × 2868 |
-| `Apple Watch` | Apple Watch → Ultra 3 | 422 × 514 |
+| `iPhone 6.3` | iPhone with Dynamic Island (medium display) | 1206 × 2622 |
+| `Apple Watch` | Apple Watch | 422 × 514 |
 
 App Store Connect scales these down for the smaller iPhones and watches, so
 one set of each is enough. Upload them in filename order.
@@ -96,32 +95,12 @@ Not shown for the first version.
 
 ## App Privacy
 
-**Privacy Policy URL:** required, and has to be a public page. You can host
-the policy below anywhere public, such as a GitHub Gist or GitHub Pages.
+**Privacy Policy URL:** `https://github.com/tonybfox/squash/blob/main/PRIVACY.md`
 
 **Data collection:** choose **"No, we do not collect data from this app"**.
 Results go straight from the watch to your own iPhone through Watch
 Connectivity and are only stored on the devices, which Apple doesn't count as
 collection.
-
-Privacy policy text:
-
-```
-Squash Score privacy policy
-
-Squash Score doesn't collect, store or share any personal information.
-
-Match scores and results are kept on your Apple Watch and iPhone only. When
-you finish a match, the result is sent directly from your watch to your own
-iPhone using Apple's Watch Connectivity. Nothing is sent to us or to anyone
-else.
-
-The app has no accounts, no ads, no analytics and no tracking.
-
-If you delete the app, its match history is deleted with it.
-
-Questions: <your support email>
-```
 
 ## App Review Information
 
